@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SEARCH RESULTS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <h2 style="text-align: center; font-weight: bold; display:bold; padding-top : 20px; padding-bottom : 20px; color:rgb(84, 105, 212);">JOB OPENINGS</h2>           
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th><h4 style="font-weight: bold; color:rgb(84, 105, 212);">JOB SITE<h4></th>
+                <th><h4 style="font-weight: bold; color:rgb(84, 105, 212);">JOB DESIGNATION<h4></th>
+                <th><h4 style="font-weight: bold; color:rgb(84, 105, 212);">COMPANY</h4></th>
+                <th><h4 style="font-weight: bold; color:rgb(84, 105, 212);">LOCATION</h4></th>
+                <th><h4 style="font-weight: bold; color:rgb(84, 105, 212);">POST TIME</h4></th>
+                <th><h4 style="font-weight: bold; color:rgb(84, 105, 212);">JOB POSTS</h4></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            {% for array in indeed %}
+
+            <tr>
+
+                <td><h5 style= "font-weight: bold;">Indeed</h5></td>
+
+                {% for dataVal in array %}
+
+                    {% if forloop.counter == 5 %}
+                        <td><a href = "{{dataVal}}"><h5 style= "font-weight: bold;">JOB LINK</h5></a></td>
+
+                    {% else %}
+                        <td><h5 style= "font-weight: bold;">{{dataVal}}</h5></td>
+
+                    {% endif %}
+
+                {% endfor %}
+
+            </tr>
+
+            {% endfor %}
+
+
+            {% for array in linkedin %}
+
+            <tr>
+
+                <td><h5 style= "font-weight: bold;">LinkedIn</h5></td>
+
+                {% for dataVal in array %}
+
+                    {% if forloop.counter == 5 %}
+                        <td><a href = "{{dataVal}}"><h5 style= "font-weight: bold;">JOB LINK</h5></a></td>
+
+                    {% else %}
+                        <td><h5 style= "font-weight: bold;">{{dataVal}}</h5></td>
+
+                    {% endif %}
+
+                {% endfor %}
+
+            </tr>
+
+            {% endfor %}
+            
+        </tbody>
+    </table>
+        
+</div>
+
+</body>
+</html>

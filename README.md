@@ -7,9 +7,9 @@ This project helps user to find relevant job openings across **LinkedIn** and **
 
 **TECH STACK USED:**
 
-**FRONTEND DEVELOPMENT : HTML5 , CSS3 , Bootstrap4**
-**BACKEND DEVELOPMENT : DJANGO PYTHON**
-**DEPOLYMENT : Deployed Using Heroku Server**
+**FRONTEND DEVELOPMENT : HTML5 , CSS3 , Bootstrap4.**
+**BACKEND DEVELOPMENT : DJANGO PYTHON.**
+**DEPOLYMENT : Deployed Using Heroku Server.**
 
 
 **YOU CAN SEE THE DEMO VIDEO BELOW:**
